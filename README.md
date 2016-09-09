@@ -3,7 +3,7 @@
 This is standing on the shoulder of a giant: https://github.com/mislav/will_paginate
 and adds some seo-sugar on top.
 
-A simple ViewHelper to display link-tags for will_paginate in header.
+A simple Rails ViewHelper to display link-tags for will_paginate in header.
 
 
 Url-Parameter left untouched.
@@ -18,6 +18,8 @@ If you want to have seo link-tags for pages in your rails app without monkey pat
 simple add to your Gemfile:
 
 ```ruby
+ # works with rails 4 and 5
+ gem 'will_paginate'
  gem 'rails_will_paginate_seo_helper'
 ```
 ## Usage
