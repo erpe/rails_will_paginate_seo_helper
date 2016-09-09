@@ -3,7 +3,7 @@ module RailsWillPaginateSeoHelper
     def will_paginate_seo_links(collection)
       return unless collection.respond_to?(:current_page)
       @collection = collection
-      previous_link_tag << next_link_tag
+      (previous_link_tag << next_link_tag).html_safe
     end
 
     private
