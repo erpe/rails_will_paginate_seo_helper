@@ -1,5 +1,10 @@
 # rails_will_paginate_seo_helper
+
+This is standing on the shoulder of a giant: https://github.com/mislav/will_paginate
+and adds some seo-sugar on top.
+
 A simple ViewHelper to display link-tags for will_paginate in header.
+
 
 Url-Parameter left untouched.
 
@@ -25,7 +30,7 @@ simple add to your Gemfile:
  ```
  
  now you can use on your templates:
- ```erb
+ ```html
  <%= will_paginate_seo_links(@todos) %>
 ```
 
