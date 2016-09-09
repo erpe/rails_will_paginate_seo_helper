@@ -1,6 +1,6 @@
 Gem::Specification.new do |s|
   s.name = 'rails_will_paginate_seo_helper'
-  s.version = '0.1.1'
+  s.version = '0.1.3'
   s.date = '2016-09-09'
   s.summary = 'SEO ViewHelper for will_paginate'
   s.description = 'adds ability to generate seo link-tags for will_paginate pages'
