@@ -28,11 +28,15 @@ simple add to your Gemfile:
  ```ruby
  @todos = Todo.all.paginate(page: params[:page])
  ```
- 
- now you can use on your templates:
- ```html
- <%= will_paginate_seo_links(@todos) %>
+now you can use on your templates (expects ```<%= yield :pagination_rel_links %>``` in your layout)
+
+```html
+ <!-- in todos/index.html.erb -->
+ <% content_for :pagination_rel_links do %>
+  <%= will_paginate_seo_links(@todos) %>
+ <% end %>
 ```
+
 
 output will be:
 ```html
