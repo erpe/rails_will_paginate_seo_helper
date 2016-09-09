@@ -1,6 +1,6 @@
 # rails_will_paginate_seo_helper
 
-This is standing on the shoulder of a giant: https://github.com/mislav/will_paginate
+This is standing on the shoulder of a giant: :heart: https://github.com/mislav/will_paginate
 and adds some seo-sugar on top.
 
 A simple ViewHelper to display link-tags for will_paginate in header.
