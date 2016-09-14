@@ -32,6 +32,8 @@ module RailsWillPaginateSeoHelper
 
     def next_link_tag
       next_page = @collection.next_page
+      return nil if next_page.nil?
+      
       original_url = request.original_url
 
       match = original_url.match(/(&|\?)page\=\d{1,}/)
