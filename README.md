@@ -40,8 +40,8 @@ now you can use on your templates (expects ```<%= yield :pagination_rel_links %>
 ```
 
 
-output will be:
+given we are on page 2 - output will be:
 ```html
-<link href="http://localhost:3000/todos?page=1" rel="prev">
+<link href="http://localhost:3000/todos" rel="prev">
 <link href="http://localhost:3000/todos?page=3" rel="next">
 ```
