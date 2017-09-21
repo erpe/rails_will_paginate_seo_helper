@@ -26,17 +26,20 @@ simple add to your Gemfile:
 
  a will_paginate paged ActiveRecord::Relation
  from your controller:
- 
+
  ```ruby
  @todos = Todo.all.paginate(page: params[:page])
  ```
-now you can use on your templates (expects ```<%= yield :pagination_rel_links %>``` in your layout)
+now you can use on your templates (expects ```<%= yield :pagination_rel_links %>``` in the header section of your layout)
 
 ```html
  <!-- in todos/index.html.erb -->
  <% content_for :pagination_rel_links do %>
+  <!-- this will showup in the header section of your html -->
   <%= will_paginate_seo_links(@todos) %>
  <% end %>
+
+
 ```
 
 
