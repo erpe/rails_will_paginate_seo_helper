@@ -10,7 +10,7 @@ Gem::Specification.new do |s|
   s.homepage = 'https://github.com/erpe/rails_will_paginate_seo_helper'
   s.license = 'MIT'
   s.add_runtime_dependency 'will_paginate', '~>3.1'
-  s.add_runtime_dependency 'rails', '>= 4', '< 5.3'
+  s.add_runtime_dependency 'rails', '>= 4'
   s.cert_chain = ['certs/rene@so36.net.pem']
   s.signing_key = File.expand_path('~/.ssh/gem-private_key.pem') if $0 =~ /gem\z/
 end
